@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos del contenedor principal */
+  .container-index {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside  section-1"
+      "aside  section-1"
+      "aside  section-1"
+      "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  .header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    height: calc(50% - 20px);
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* Estilos de la sección principal */
+  .section-1 {
+    grid-area: section-1;
+  }
+  
+  .section-1 label,
+  .section-1 input,
+  .section-1 button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .section-1 input[type="text"],
+  .section-1 button {
+    padding: 5px;
+  }
+  
+  .section-1 input[type="text"] {
+    border: 1px solid #ccc;
+  }
+  
+  .section-1 button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section-1 button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos de la barra de resultado */
+  #resultado {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: right;
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilos de la barra lateral */
+  .aside {
+    grid-area: aside;
+  }
+  
+  .aside-p {
+    border-right: 1px solid black;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del pie de página */
+  .footer-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: footer;
+    background-color: transparent;
+    gap: 10px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container .icono-whatsapp,
+  .footer-container .icono-instagram,
+  .footer-container .icono-linkedin {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  #mostrarBtn {
+    background-color: #20c997;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  #mostrarBtn:hover {
+    background-color: #178d70;
+  }

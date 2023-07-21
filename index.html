@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TP2 - ROJAS ESTEBAN</title>
+</head>
+<body>
+
+  <div class="container-index">
+
+    <header class="header">
+      <h1>Pre-Entrega N°2</h1>
+    </header>
+
+    <section class="section-1">
+      <br>
+      
+      <label for="montoInput">Valor del préstamo ($): </label>
+      <input type="text" id="montoInput" placeholder="Monto del préstamo">
+            
+      <label for="tasaInput">Tasa de interés anual (%): </label>
+      <input type="text" id="tasaInput" placeholder="Tasa de interés anual"> <span></span>
+      
+      <input type="text" id="periodosInput" placeholder="Número de períodos">
+      <button id="calcularBtn">Calcular</button>
+
+      <label for="resultado">Resultado: $</label>
+      <input type="text" id="resultado" readonly>    
+
+      <button id="historialBtn">Buscar intereses por fecha</button>
+
+      <button id="mostrarBtn">Mostrar intereses guardados</button> <!-- Nuevo botón -->
+
+      <!-- Lista para mostrar los intereses guardados -->
+
+      <ul id="interesesGuardadosList"></ul>
+
+    </section>
+
+    <aside class="aside-index">
+      <p class="aside-p">Soy una calculadora de préstamos. Puedo ayudarte a obtener el cálculo de intereses acumulados en tu préstamo. Simplemente ingresa el monto del préstamo, la tasa de interés anual y el número de períodos, y calcularé los intereses acumulados para ti. Además, puedes buscar la tasa de interés correspondiente a una fecha específica en mi historial de intereses.</p>
+    </aside>
+
+    <footer class="footer-container">
+
+      <div>
+
+        <a href="https://www.whatsapp.com"><img class="icono-whatsapp" src="./img/footer/whatsapp.png"></a>
+
+        <a href="https://www.instagram.com"><img class="icono-instagram" src="./img/footer/instagram.png"></a>
+
+        <a href="https://www.linkedin.com"><img class="icono-linkedin" src="./img/footer/linkedin.png"></a>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
