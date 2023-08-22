@@ -18,25 +18,49 @@
     <section class="section-1">
       <br>
       
-      <label for="montoInput">Valor del préstamo ($): </label>
-      <input type="text" id="montoInput" placeholder="Monto del préstamo">
-            
-      <label for="tasaInput">Tasa de interés anual (%): </label>
-      <input type="text" id="tasaInput" placeholder="Tasa de interés anual"> <span></span>
-      
-      <input type="text" id="periodosInput" placeholder="Número de períodos">
-      <button id="calcularBtn">Calcular</button>
 
-      <label for="resultado">Resultado: $</label>
+      <div id="detallePrestamo">
+        <label for="montoInput">Valor del préstamo ($): </label>
+        <input type="text" id="montoInput" placeholder="Monto del préstamo">
+              
+        <label for="tasaInput">Tasa de interés anual (%): </label>
+        <input type="text" id="tasaInput" placeholder="Tasa de interés anual"> <span></span>
+        
+        <input type="text" id="periodosInput" placeholder="Número de períodos">
+
+        <label for="fechaInput">Fecha del préstamo:</label>
+        <input type="date" id="fechaInput">
+
+        <button id="calcularBtn">Calcular</button>
+      </div>
+      
+      <label for="resultado">Monto total a pagar: $</label>
       <input type="text" id="resultado" readonly>    
 
+      <div id="detalleCuotas">
+
+      </div>
+
+      <label for="fechaInteres">Fecha para búsqueda de interés:</label>
+      <input type="date" id="fechaInteres">
       <button id="historialBtn">Buscar intereses por fecha</button>
 
-      <button id="mostrarBtn">Mostrar intereses guardados</button> <!-- Nuevo botón -->
+      <button id="mostrarBtn">Mostrar intereses guardados</button>
+      </section>
 
       <!-- Lista para mostrar los intereses guardados -->
 
-      <ul id="interesesGuardadosList"></ul>
+      <section class="section-3">
+        <ul id="cuotasList">
+  
+        </ul>
+      </section>
+
+      <section class="section-4">
+        <ul id="interesesGuardadosList">
+
+        </ul>
+      </section>
 
     </section>
 
@@ -60,3 +84,5 @@
   </div>
 
   <script src="main.js"></script>
+</body>
+</html>
